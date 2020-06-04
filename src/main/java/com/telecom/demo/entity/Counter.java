@@ -1,6 +1,5 @@
 package com.telecom.demo.entity;
 
-
 import javax.persistence.*;
 
 @Entity
