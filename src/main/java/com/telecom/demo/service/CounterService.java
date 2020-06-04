@@ -1,10 +1,12 @@
 package com.telecom.demo.service;
 
-import com.telecom.demo.domain.Counter;
+
+import com.telecom.demo.entity.Counter;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-public interface ICounterService {
+public interface CounterService {
 
     List<Counter> search(String searchContext);
 
