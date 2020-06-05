@@ -3,7 +3,6 @@ package com.telecom.demo.repository;
 import com.telecom.demo.entity.Counter;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.test.mock.mockito.MockBean;
-import org.testng.annotations.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -23,7 +22,6 @@ public class CounterRepositoryTest {
 //    private CounterRepository counterRepository;
 
 
-    @Test
     public void testFindByName() {
 
 //       List<Counter> results = counterRepository.findByName("Duis");
