@@ -1,7 +1,7 @@
 # Tech-evaluation
 
-This Maven project is developed to demonstrate my skills set of Java, Spring Boot, Spring Security and JPA.
-It's running on in-memory database which is H2 and spring boot embedded Tomcat
+This Maven project is developed in Java 8, Spring Boot, Spring Security and JPA.
+It's running on spring boot embedded Tomcat and in-memory H2 database. 
 
 ### Task 1:
 Implement RESTful Services, which provide the solution of the following tasks, given the sample paragraphs. Also protect the services with Spring Security
