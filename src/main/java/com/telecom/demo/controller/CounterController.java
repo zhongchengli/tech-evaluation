@@ -19,11 +19,21 @@ public class CounterController {
     @Autowired
     private CounterService counterService;
 
+    // GET request of /counter-api/counters
     @GetMapping("/counters")
     public List<Counter> getAll() {
         return counterService.search();
     }
 
+    // GET request of /counter-api/top/20
+    @GetMapping("/top/{limit}")
+    public List<String> findTopText(@PathVariable int limit){
+        this.counterService.findTopText(limit);
+        // TODO
+        return null;
+    }
+
+    // POST request of /counter-api/search with request body
     @PostMapping("/search")
     public Map<String, Integer> searchNames(@RequestBody Map<String, Object[]> search) {
 

@@ -13,11 +13,13 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 
 @Configuration
 @EnableWebSecurity
-public class WebSecurityConfig extends WebSecurityConfigurerAdapter
-{
+public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
-    protected void configure(HttpSecurity http) throws Exception
-    {
+    protected void configure(HttpSecurity http) throws Exception {
+        /*
+        Authorization config based on role mapping of users who have sent particular requests.
+        We can also config remember-me, redirect url, logout, session/cookie, token and so on.
+         */
         http
                 .csrf()
                 .disable()
@@ -32,9 +34,11 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter
 
     @Autowired
     public void configureGlobal(AuthenticationManagerBuilder auth)
-            throws Exception
-    {
-//        optus:candidates
+            throws Exception {
+        /*
+        Authentication config for demo only.
+        In real-world project, we will validate credential against datasource by jdbcAuthentication.
+         */
         auth.inMemoryAuthentication()
                 .withUser("optus")
                 .password(passwordEncoder().encode("candidates"))

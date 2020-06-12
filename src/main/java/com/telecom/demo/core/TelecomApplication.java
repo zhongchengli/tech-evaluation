@@ -8,7 +8,9 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
 @ComponentScan("com.telecom.demo.*")
+// scan entity beans, this config could be moved to WebDbConfig class
 @EntityScan("com.telecom.demo.entity")
+// enable JPA and point to the location of repositories
 @EnableJpaRepositories("com.telecom.demo.repository")
 public class TelecomApplication {
 

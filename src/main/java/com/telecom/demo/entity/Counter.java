@@ -39,4 +39,8 @@ public class Counter {
     public void setNumber(Integer number) {
         this.number = number;
     }
+
+    public Counter(String name) {
+        this.name = name;
+    }
 }
