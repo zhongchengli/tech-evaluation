@@ -40,6 +40,9 @@ public class Counter {
         this.number = number;
     }
 
+    public Counter() {
+    }
+
     public Counter(String name) {
         this.name = name;
     }
