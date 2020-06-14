@@ -1,5 +1,6 @@
 package com.telecom.demo.exception;
 
+// Customized Exception
 public class CounterNotFoundException extends RuntimeException {
     public CounterNotFoundException(){}
 

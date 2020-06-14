@@ -15,6 +15,7 @@ public interface CounterService {
 
     Map<String, Integer> findTopText(int limit);
 
+    // Default method in the interface class
     default List<Map.Entry<String, Integer>> sortByValue(Map<String, Integer> wordMap) {
         Set<Map.Entry<String, Integer>> set = wordMap.entrySet();
         List<Map.Entry<String, Integer>> list = new ArrayList<>(set);

@@ -12,6 +12,7 @@ import java.util.List;
 @Repository
 public interface CounterRepository extends JpaRepository<Counter, Long>, ICounterRepositoryCustom {
 
+    // Customized query
     @Query(value = "SELECT c FROM Counter c WHERE c.name IN :names")
     List<Counter> findByNames(@Param("names") Collection<String> names);
 }
