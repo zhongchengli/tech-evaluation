@@ -1,3 +1,4 @@
+-- in-memory database initialization
 DROP TABLE IF EXISTS counter;
 
 CREATE TABLE counter (

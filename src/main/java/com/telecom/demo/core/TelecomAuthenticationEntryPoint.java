@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+// Override spring basic authentication entry point for REST API with json representation
 @Component
 public class TelecomAuthenticationEntryPoint extends BasicAuthenticationEntryPoint {
 
